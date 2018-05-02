@@ -43,3 +43,11 @@ def get_prices_by_filter(country_code, category_id):
                 )
 
     return prices
+
+
+#  it happen only when command is ran from console
+if __name__ == '__main__':
+    country_code, category = sys.argv[1:3]
+    print(
+        get_prediction(country_code, category)
+    )
